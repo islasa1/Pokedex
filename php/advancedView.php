@@ -2,15 +2,12 @@
     
     require_once '../app_config.php';
     
-    // This will be the "Standard View" 
-    // Unfortunately, you cannot dynamically change views
-    // in MySQL, and functions are only allowed to return
-    // one value, so instead use a php script to change query
+    // This will be the "Advanced View" 
     $PokeNo = $_GET['PokeNo'];
     
     // This query ensures that as long as the pokemon has relevant data, it will
     // be pulled, even if there is no evo data
-    $query = "SELECT * FROM StandardView WHERE PokeNo=" . $PokeNo;
+    $query = "SELECT * FROM AdvancedView WHERE PokeNo=" . $PokeNo;
   
   
   /* Select queries return a resultset */
@@ -19,7 +16,7 @@
         /* fetch the associative array */
         while($row = mysqli_fetch_assoc($result))
         {
-            printf("%s\t%s<br>%s<br>%d", $row["Type1"], $row["Type2"], $row["Description"], $row["evoNo"]);
+            printf("%s\t%s<br>%s<br>%d<br>%f<br>%f", $row["Type1"], $row["Type2"], $row["Description"], $row["evoNo"], $row["Size"], $row["Weight"]);
         }
 
         /* free result set */

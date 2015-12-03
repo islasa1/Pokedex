@@ -146,7 +146,7 @@ INSERT INTO Pokemon (PokeNo, Name, Type1, Type2, Description) VALUES(118, 'Golde
 INSERT INTO Pokemon (PokeNo, Name, Type1, Type2, Description) VALUES(119, 'Seaking', 'WATER', NULL,  NULL);
 INSERT INTO Pokemon (PokeNo, Name, Type1, Type2, Description) VALUES(120, 'Staryu', 'WATER', NULL,  NULL);
 INSERT INTO Pokemon (PokeNo, Name, Type1, Type2, Description) VALUES(121, 'Starmie', 'WATER', 'PSYCHIC',  NULL);
-INSERT INTO Pokemon (PokeNo, Name, Type1, Type2, Description) VALUES(122, 'Mr. Mime', 'PSYCHIC', 'FAIRY',  NULL);
+INSERT INTO Pokemon (PokeNo, Name, Type1, Type2, Description) VALUES(122, 'Mr.Mime', 'PSYCHIC', 'FAIRY',  NULL);
 INSERT INTO Pokemon (PokeNo, Name, Type1, Type2, Description) VALUES(123, 'Scyther', 'BUG', 'FLYING',  NULL);
 INSERT INTO Pokemon (PokeNo, Name, Type1, Type2, Description) VALUES(124, 'Jynx', 'ICE', 'PSYCHIC',  NULL);
 INSERT INTO Pokemon (PokeNo, Name, Type1, Type2, Description) VALUES(125, 'Electabuzz', 'ELECTRIC', NULL,  NULL);
@@ -181,12 +181,176 @@ INSERT INTO Pokemon (PokeNo, Name, Type1, Type2, Description) VALUES(151, 'Mew',
 INSERT INTO PokeStage VALUES(1, 1, 001);
 INSERT INTO PokeStage VALUES(2, 1, 002);
 INSERT INTO PokeStage VALUES(3, 1, 003);
-INSERT INTO PokeStage VALUES(1, 2, 004);
-INSERT INTO PokeStage VALUES(2, 2, 005);
-INSERT INTO PokeStage VALUES(3, 2, 006);
-INSERT INTO PokeStage VALUES(1, 3, 007);
-INSERT INTO PokeStage VALUES(2, 3, 008);
-INSERT INTO PokeStage VALUES(3, 3, 009);
+INSERT INTO PokeStage VALUES(1, 4, 004);
+INSERT INTO PokeStage VALUES(2, 4, 005);
+INSERT INTO PokeStage VALUES(3, 4, 006);
+INSERT INTO PokeStage VALUES(1, 7, 007);
+INSERT INTO PokeStage VALUES(2, 7, 008);
+INSERT INTO PokeStage VALUES(3, 7, 009);
+
+-- Caterpie
+INSERT INTO PokeStage VALUES(1, 10, 010);
+INSERT INTO PokeStage VALUES(2, 10, 011);
+INSERT INTO PokeStage VALUES(3, 10, 012);
+
+-- Weedle
+INSERT INTO PokeStage VALUES(1, 13, 013);
+INSERT INTO PokeStage VALUES(2, 13, 014);
+INSERT INTO PokeStage VALUES(3, 13, 015);
+
+-- Pidgey
+INSERT INTO PokeStage VALUES(1, 16, 016);
+INSERT INTO PokeStage VALUES(2, 16, 017);
+INSERT INTO PokeStage VALUES(3, 16, 018);
+
+-- Rattata
+INSERT INTO PokeStage VALUES(1, 19, 019);
+INSERT INTO PokeStage VALUES(2, 19, 020);
+
+-- Spearow
+INSERT INTO PokeStage VALUES(1, 21, 021);
+INSERT INTO PokeStage VALUES(2, 21, 022);
+
+-- Ekans
+INSERT INTO PokeStage VALUES(1, 23, 023);
+INSERT INTO PokeStage VALUES(2, 23, 024);
+
+-- Pikachu
+INSERT INTO PokeStage VALUES(1, 25, 025);
+INSERT INTO PokeStage VALUES(2, 25, 026);
+
+-- Sandshrew
+INSERT INTO PokeStage VALUES(1, 27, 027);
+INSERT INTO PokeStage VALUES(2, 27, 028);
+
+-- Nidoran (F)
+INSERT INTO PokeStage VALUES(1, 29, 029);
+INSERT INTO PokeStage VALUES(2, 29, 030);
+INSERT INTO PokeStage VALUES(3, 29, 031);
+
+-- Nidoran (M)
+INSERT INTO PokeStage VALUES(1, 32, 032);
+INSERT INTO PokeStage VALUES(2, 32, 033);
+INSERT INTO PokeStage VALUES(3, 7, 034);
+
+
+
+-- EEVEE TEST, using new evoSet method based on base pokemon number
+INSERT INTO PokeStage VALUES(1, 133, 133);
+INSERT INTO PokeStage VALUES(2, 133, 134);
+INSERT INTO PokeStage VALUES(2, 133, 135);
+INSERT INTO PokeStage VALUES(2, 133, 136);
+
+
+
+-- MoveList
+-- Moves
+-- Some with description
+INSERT INTO MoveList VALUES(1, 'Absorb', 'A nutrient-draining attack. The user''s HP is restored by half the damage taken by the target.',
+								20, 100, 'GRASS');
+
+INSERT INTO MoveList VALUES(2, 'Acid', 'The opposing Pokemon are attacked with a spray of harsh acid. This may also lower their Sp. Def stats.',
+								40, 100, 'POISON');
+
+-- Some without
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 2,'Acid Armor', 'POISON');	
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 3,'Acid Spray', 'POISON');	
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 4,'Acrobatics', 'FLYING');	
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 5,'Acupressure', 'NORMAL');	
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 6,'Aerial Ace', 'FLYING');	
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 7,'Aeroblast', 'FLYING');	
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 8,'After You', 'NORMAL');	
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 9,'Agility', 'PSYCHIC');	
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 10,'Air Cutter', 'FLYING');	
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 11,'Air Slash', 'FLYING');	
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 12,'Ally Switch', 'PSYCHIC');	
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 13,'Amnesia', 'PSYCHIC');	
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 14,'Ancient Power', 'ROCK');	
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 15,'Aqua Jet', 'WATER');	
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 16,'Aqua Ring', 'WATER');	
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 17,'Aqua Tail', 'WATER');	
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 18,'Arm Thrust', 'FIGHTING');	
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 19,'Aromatherapy', 'GRASS');	
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 20,'Assist', 'NORMAL');	
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 21,'Assurance', 'DARK');	
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 22,'Astonish', 'GHOST');	
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 23,'Attack Order', 'BUG');	
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 24,'Attract', 'NORMAL');	
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 25,'Aura Sphere', 'FIGHTING');	
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 26,'Aurora Beam', 'ICE');	
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 27,'Autotomize', 'STEEL');	
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 28,'Avalanche', 'ICE');
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 29,'Baby-Doll Eyes', 'FAIRY');
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 30,'Barrage', 'NORMAL');
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 31,'Barrier', 'PSYCHIC');
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 32,'Baton Pass', 'NORMAL');
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 33,'Beat Up', 'DARK');
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 34,'Belly Drum', 'NORMAL');
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 35,'Bestow', 'NORMAL');
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 36,'Bide', 'NORMAL');
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 37,'Bind', 'NORMAL');
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 38,'Bite', 'DARK');
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 39,'Blast Burn', 'FIRE');
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 40,'Blaze Kick', 'FIRE');
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 41,'Blizzard', 'ICE');
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 42,'Block', 'NORMAL');
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 43,'Blue Flare', 'FIRE');
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 44,'Body Slam', 'NORMAL');
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 45,'Bolt Strike', 'ELECTRIC');
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 46,'Bone Club', 'GROUND');
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 47,'Bone Rush', 'GROUND');
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 48,'Bonemerang', 'GROUND');
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 49,'Boomburst', 'NORMAL');
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 50,'Bounce', 'FLYING');
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 51,'Brave Bird', 'FLYING');
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 52,'Brick Break', 'FIGHTING');
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 53,'Brine', 'WATER');
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 54,'Bubble', 'WATER');
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 55,'Bubble Beam', 'WATER');
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 56,'Bug Bite', 'BUG');
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 57,'Bug Buzz', 'BUG');
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 58,'Bulk Up', 'FIGHTING');
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 59,'Bulldoze', 'GROUND');
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 60,'Bullet Punch', 'STEEL');
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 61,'Bullet Seed', 'GRASS');
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 62,'Calm Mind', 'PSYCHIC');
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 63,'Camouflage', 'NORMAL');
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 64,'Captivate', 'NORMAL');
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 65,'Celebrate', 'NORMAL');
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 66,'Charge', 'ELECTRIC');
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 67,'Charge Beam', 'ELECTRIC');
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 68,'Charm', 'FAIRY');
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 69,'Chatter', 'FLYING');
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 70,'Chip Away', 'NORMAL');
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 71,'Circle Throw', 'FIGHTING');
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 72,'Clamp', 'WATER');
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 73,'Clear Smog', 'POISON');
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 74,'Close Combat', 'FIGHTING');
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 75,'Coil', 'POISON');
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 76,'Comet Punch', 'NORMAL');
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 77,'Confide', 'NORMAL');
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 78,'Confuse Ray', 'GHOST');
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 79,'Confusion', 'PSYCHIC');
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 80,'Constrict', 'NORMAL');
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 81,'Conversion', 'NORMAL');
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 82,'Conversion 2', 'NORMAL');
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 83,'Copycat', 'NORMAL');
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 84,'Cosmic Power', 'PSYCHIC');
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 85,'Cotton Guard', 'GRASS');
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 86,'Cotton Spore', 'GRASS');
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 87,'Counter', 'FIGHTING');
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 88,'Covet', 'NORMAL');
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 89,'Crabhammer', 'WATER');
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 90,'Crafty Shield', 'FAIRY');
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 91,'Cross Chop', 'FIGHTING');
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 92,'Cross POISON');
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 93,'Crunch', 'DARK');
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 94,'Crush Claw', 'NORMAL');
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 95,'Crush Grip', 'NORMAL');
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 96,'Curse', 'GHOST');
+INSERT INTO MoveList (MoveNo, Name, Type)  VALUES( 97,'Cut', 'NORMAL');
+
+
 
 -- Insert Effectiveness Values
 /*NORMAL*/
